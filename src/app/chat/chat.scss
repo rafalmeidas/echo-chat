@@ -1,0 +1,57 @@
+:host {
+  display: flex;
+
+  .chat-container {
+    display: flex;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    &__messages {
+      flex: 1;
+      height: 200px;
+      overflow-y: auto;
+      border: 1px solid #eee;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border-radius: 4px;
+    }
+
+    &__input-area {
+      display: flex;
+      gap: 0.5rem;
+
+      input,
+      button {
+        background: #ddd;
+        border-radius: 4px;
+        border: none;
+      }
+
+      input {
+        flex: 1;
+        padding: 0.5rem;
+        background: transparent;
+        outline: -webkit-focus-ring-color auto 1px;
+        outline-color: #eee;
+
+        &:focus-visible {
+          background: #ddd;
+        }
+      }
+
+      button {
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+
+        &:hover {
+          outline: 1px solid;
+          outline-color: #eee;
+        }
+      }
+    }
+  }
+}

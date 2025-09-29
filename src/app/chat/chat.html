@@ -1,0 +1,14 @@
+<div class="chat-container">
+  <h2>Echo Chat</h2>
+
+  <div class="chat-container__messages">
+    @for (msg of messages; track msg) {
+    <div>{{ msg }}</div>
+    }
+  </div>
+
+  <div class="chat-container__input-area">
+    <input [(ngModel)]="message" (keyup.enter)="sendMessage()" placeholder="Type a message..." />
+    <button (click)="sendMessage()">Send</button>
+  </div>
+</div>
