@@ -1,59 +1,61 @@
-# EchoChat
+# 📖 Echo Chat Angular — Projeto PDI
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.0.
+**Descrição**  
+Este projeto é um exemplo de aplicação Angular que demonstra o uso de WebSockets para comunicação em tempo real, desenvolvido como parte do meu Plano de Desenvolvimento Individual (PDI). O objetivo é aprimorar o domínio de conexões em tempo real, praticar o uso de RxJS no contexto Angular e implementar testes unitários robustos. Para facilitar o desenvolvimento e demonstração, o projeto utiliza o servidor Echo do Postman, que retorna instantaneamente todas as mensagens enviadas pelo usuário, permitindo validar rapidamente o fluxo de envio e recebimento de mensagens. A interface é simples, com campo de entrada de texto e lista dinâmica de mensagens, oferecendo um exemplo prático de comunicação reativa em Angular.
 
-## Development server
+## 💡Funcionalidades
 
-To start a local development server, run:
+-   Envio de mensagens do usuário e recebimento instantâneo de respostas do servidor.
+    
+-   Serviço `WebsocketService` para gerenciar conexão, envio e recebimento.
+    
+-   Interface simples com campo de texto e lista dinâmica de mensagens.
+    
+-   Componentes standalone com suporte a `ngModel` via `FormsModule`.
+    
+-   Testes unitários completos com Jasmine/Karma usando mocks do WebSocket.
 
-```bash
-ng serve
-```
+## 🤖Tecnologias
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+-   Angular 20
+    
+-   RxJS
+    
+-   TypeScript
+    
+-   SCSS
+    
+-   Jasmine / Karma (testes unitários)
 
-## Code scaffolding
+## 🛠️Como rodar
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1.  Clonar o repositório:
+	```bash
+	git clone https://github.com/SEU-USUARIO/echo-chat-angular.git
+	cd echo-chat-angular
+	```
+2.  Instalar dependências:
+	```bash
+	npm install
+	```
 
-```bash
-ng generate component component-name
-```
+3.  Rodar a aplicação:
+	```bash
+	ng serve // ou npm run start
+	```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+4.  Acessar no navegador:
+	```bash
+	http://localhost:4200
+	```
 
-```bash
-ng generate --help
-```
+## 🧪 Testes
 
-## Building
+Para executar os testes unitários:
 
-To build the project run:
+`ng test` 
 
-```bash
-ng build
-```
+Todos os testes simulam mensagens do servidor sem precisar de conexão real.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 🎬Demo
+![DEMO](src/assets/demo.gif)
